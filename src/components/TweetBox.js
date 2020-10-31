@@ -6,15 +6,15 @@
     function TweetBox() {
     const [tweetMessage, setTweetMessage] = useState("");
     const [tweetImage, setTweetImage] = useState("");
-    const [avatar, setAvatar] = useState("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Noto_Emoji_KitKat_263a.svg/1200px-Noto_Emoji_KitKat_263a.svg.png")
+    const [avatar, setAvatar] = useState("https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg")
 
     const sendTweet = (e) => {
         e.preventDefault();
 
         db.collection("posts").add({
-        displayName: "Ark B",
-        username: "Arkb123",
-        verified: true,
+        displayName: "Demo User",
+        username: "Demo_user123",
+        verified: false,
         text: tweetMessage,
         image: tweetImage,
         avatar:
